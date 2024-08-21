@@ -1,6 +1,8 @@
 import express from 'express'
 import { engine } from 'express-handlebars'
 import viewRouter from './routes/views.route.js'
+import usersRouter from './routes/users.route.js'
+
 const app = express()
 const PORT = 3000
 
@@ -15,6 +17,7 @@ app.set('views', './src/views')
 app.use(express.static('public'))
 
 app.use('/', viewRouter)
+app.use('/api/users', usersRouter)
 
 
 app.listen(PORT, ()=> {

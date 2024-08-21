@@ -34,3 +34,4 @@ export const users = (request, response) => {
     }
     response.render('users', datos)
 }
+
