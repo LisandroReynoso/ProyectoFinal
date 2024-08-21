@@ -1,0 +1,15 @@
+<h1>Bienvenidos a {{title}}</h1>
+
+{{#if user}}
+<h2>Estimado Usuario: {{user}}</h2>
+
+{{else}}
+<form action="">
+    <label for="">nombre de usuario</label>
+    <input type="text">
+    <br>
+    <label for="">contraseña</label>
+    <input type="password">
+    <input type="submit" value="Iniciar sesion">
+</form>
+{{/if}}
