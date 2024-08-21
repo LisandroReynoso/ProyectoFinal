@@ -13,7 +13,7 @@ export const users = (request, response) => {
 
     const datos = {
         status: 200,
-        title: usuarios
+        payload: usuarios
     }
     response.status(200).json(datos)
 }

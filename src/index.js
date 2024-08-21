@@ -7,6 +7,7 @@ import usersRouter from './routes/users.route.js'
 const app = express()
 const PORT = 3000
 
+app.use(cors())
 app.engine('handlebars', engine({
     defaultLayout: 'main',
     layoutsDir: './src/views/layouts',

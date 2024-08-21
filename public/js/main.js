@@ -1,5 +1,5 @@
 
-console.log('hola mundo')
+
 
 const boton = document.createElement('button')
 
@@ -10,6 +10,6 @@ document.body.append(boton)
 boton.addEventListener('click', ()=> {
     fetch('/api/users')
         .then(response => response.json())
-        .then(data => console.log(data.title))
+        .then(data => console.log(data.payload))
 })
 
