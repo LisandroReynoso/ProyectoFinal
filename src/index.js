@@ -1,4 +1,5 @@
 import express from 'express'
+import cors from 'cors'
 import { engine } from 'express-handlebars'
 import viewRouter from './routes/views.route.js'
 import usersRouter from './routes/users.route.js'

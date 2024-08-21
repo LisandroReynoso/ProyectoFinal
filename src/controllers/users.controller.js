@@ -12,8 +12,8 @@ export const users = (request, response) => {
     })
 
     const datos = {
-        title: 'users',
-        usuarios: usuarios,
+        status: 200,
+        title: usuarios
     }
     response.status(200).json(datos)
 }
